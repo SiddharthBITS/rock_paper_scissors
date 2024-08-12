@@ -95,21 +95,21 @@ function playRound(humanChoice, compChoice)
 
     if(win === 1)
     {
-        let line = `You win! ${humanChoice} beats ${compChoice}!` + `\n`;
+        let line = `You win! ${humanChoice} beats ${compChoice}!`;
         track.textContent += line;
         console.log(line);
         humanScore++;
     }
     else if(win === -1)
     {
-        let line = `You lose! ${compChoice} beats ${humanChoice}!` + `\n`
+        let line = `You lose! ${compChoice} beats ${humanChoice}!`;
         track.textContent += line;
         console.log(line);
         compScore++;
     }
     else
     {
-        let line = `Its a tie! Both picked ${compChoice}!` + `\n`;
+        let line = `Its a tie! Both picked ${compChoice}!`;
         track.textContent += line;
         console.log(line);
     }
